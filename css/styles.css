@@ -118,6 +118,15 @@ img {
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+
+.link-info::before {
+    content: " ";
+    width: 16px;
+    height: 12px;
+    outline: 1px tomato;
+}
+
+
 .header .link-info:hover,
 .header .link-info:focus {
     color: var(--accent-txt-cl);
@@ -212,6 +221,14 @@ img {
     margin-bottom: 0px;
     
 }
+/*.main-list-iteam::before {
+    display: inline-block;
+    outline: 2px tomato;
+    content: "";
+    width: 40px;
+    height: 20px;
+}
+*/
 .features-title {
     margin-bottom: 10px;
 }
