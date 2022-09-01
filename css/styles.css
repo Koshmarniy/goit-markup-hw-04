@@ -364,7 +364,7 @@ img {
     padding-top: 30px;
     
 }
-
+/* Постійні клієнти*/
 .clients-section {
     background: var(--light-txt-cl);
 
@@ -375,17 +375,62 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-/* Контактна адреса */
 
+.title-clients-name {
+    font-size: 36px;
+    line-height: calc(42px / 36px);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-txt-cl);
+}
+.title-clients-name {
+    margin-bottom: 30px;
+}
+.clients-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.client-item {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+}
+.client-icon {
+    fill: var(--grey-txt-cl);
+}
+.client-icon:hover {
+    fill: var(--blue-bg-cl);
+}
+.client-item:hover {
+    border: 1px solid var(--blue-bg-cl);
+}
+
+
+/* Контактна адреса */
 .footer {
+
     background: var(--main-bg-cl);
     padding-top: 60px;
     padding-bottom: 60px;
     max-width: 1600px;
     min-height: 252px;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
     
+}
+.footer .container {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
 }
 .footer .logo-title {
     margin-right: 0px;
@@ -432,6 +477,38 @@ img {
 
 .list-address {
     list-style: none; 
+}
+.footer-title {
+    font-size: 14px;
+    line-height: calc(16px / 14px) ;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-txt-cl);
+    margin-bottom: 20px;
+}
+.social-link-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 44px;
+    height: 44px;
+    
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.socials-list-item-footer {
+    display: flex;
+    gap: 22px;
+    justify-content:center;
+    align-items: center;
+}
+
+.social-icon-footer {
+    fill: var(--light-txt-cl);
+}
+.social-link-footer:hover {
+    background-color: var(--blue-bg-cl);
 }
 
 
