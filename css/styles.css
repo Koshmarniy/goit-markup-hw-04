@@ -119,15 +119,9 @@ img {
     letter-spacing: 0.02em;
     text-decoration: none;
 }
-
-/*.link-info::before {
-    display: inline-block;
-    content: " ";
-    width: 16px;
-    height: 12px;
-    outline: 1px solid tomato;
+.icon-envelope {
+    fill: red;
 }
-*/
 
 .header .link-info:hover,
 .header .link-info:focus {
