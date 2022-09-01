@@ -12,6 +12,8 @@
     /* Background colors */
     --main-bg-cl:#2F303A;
     --secondary-bg-cl:#F5F4FA;
+    --next-bg-cl: #FFFFFF;
+    --blue-bg-cl: #2196F3;
 
     /* Others */
     
@@ -110,8 +112,10 @@ img {
 .header .link-info {
     padding-top: 32px;
     padding-bottom: 32px;
-    display: block;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     color: var(--grey-txt-cl);
     font-weight: 500;
     font-size: 14px;
@@ -119,8 +123,10 @@ img {
     letter-spacing: 0.02em;
     text-decoration: none;
 }
-.icon-envelope {
-    fill: red;
+.icon-envelope,
+.icon-smartphone {
+    fill: currentColor;
+
 }
 
 .header .link-info:hover,
@@ -197,6 +203,17 @@ img {
     display: flex;
     gap: 30px;
 }
+
+.box-icon-antenna,
+.box-icon-clock,
+.box-icon-diagram,
+.box-icon-astronaut {
+    display: block;
+    padding: 25px 100px;
+    width: 270px;
+    height: 120px;
+    padding: auto;
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -263,6 +280,7 @@ img {
 
 /* Наша команда */
 .team .team-list-item {
+    background-color: var(--next-bg-cl);
     list-style: none;
     width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -310,12 +328,53 @@ img {
     letter-spacing: 0.03em;
     color: var(--grey-txt-cl);
     text-align: center;
+    margin-bottom: 15px;
 }
-.team-compound {
-    padding-top: 30px;
+
+
+.socials-list-item {
+    display: flex;
+    gap: 22px;
+    justify-content:center;
     padding-bottom: 30px;
 }
 
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    
+    background-color: var(--light-txt-cl);
+    border-radius: 50%;
+}
+.social-icon {
+    fill: var(--grey-txt-cl);
+}
+.social-icon:hover {
+    fill: var(--next-bg-cl);
+} 
+.social-link:hover {
+    background-color: var(--blue-bg-cl)
+}
+
+.team-compound {
+    padding-top: 30px;
+    
+}
+
+.clients-section {
+    background: var(--light-txt-cl);
+
+    text-align: center;
+    max-width: 1600px;
+    margin-top: 94px;
+    margin-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
+}
 /* Контактна адреса */
 
 .footer {
