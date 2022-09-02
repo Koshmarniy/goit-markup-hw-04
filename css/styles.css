@@ -14,6 +14,8 @@
     --secondary-bg-cl:#F5F4FA;
     --next-bg-cl: #FFFFFF;
     --blue-bg-cl: #2196F3;
+    --grey-bg-cl: #F5F4FA;
+    --lightgrey-bg-cl: #AFB1B8;
 
     /* Others */
     
@@ -213,6 +215,9 @@ img {
     width: 270px;
     height: 120px;
     padding: auto;
+    background: var(--grey-bg-cl);
+    border-radius: 4px;
+    margin-bottom: 30px;
 }
 .visually-hidden {
     position: absolute;
@@ -334,34 +339,34 @@ img {
 
 .socials-list-item {
     display: flex;
-    gap: 22px;
+    gap: 12px;
     justify-content:center;
-    padding-bottom: 30px;
+    
 }
 
 .social-link {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    fill: var(--lightgrey-bg-cl);
     width: 44px;
     height: 44px;
     
     background-color: var(--light-txt-cl);
     border-radius: 50%;
 }
-.social-icon {
-    fill: var(--grey-txt-cl);
-}
-.social-icon:hover {
+
+
+.social-link:hover,
+.social-link:focus {
     fill: var(--next-bg-cl);
+    background-color: var(--blue-bg-cl);
+
 } 
-.social-link:hover {
-    background-color: var(--blue-bg-cl)
-}
 
 .team-compound {
     padding-top: 30px;
+    padding-bottom: 30px;
     
 }
 /* Постійні клієнти*/
@@ -369,9 +374,8 @@ img {
     background: var(--light-txt-cl);
 
     text-align: center;
-    max-width: 1600px;
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -394,26 +398,25 @@ img {
 }
 
 .client-item {
-    display: flex;
     width: 170px;
     height: 92px;
+}
+.client-list-item {
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    fill: var(--lightgrey-bg-cl);
+    width: 100%;
+    height: 100%;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+}
 
-}
-.client-icon {
-    fill: var(--grey-txt-cl);
-}
-.client-icon:hover {
+.client-list-item:hover,
+.client-list-item:focus {
     fill: var(--blue-bg-cl);
-}
-.client-item:hover {
     border: 1px solid var(--blue-bg-cl);
 }
-
 
 /* Контактна адреса */
 .footer {
@@ -490,7 +493,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    fill: var(--light-txt-cl);
     width: 44px;
     height: 44px;
     
@@ -499,15 +502,14 @@ img {
 }
 .socials-list-item-footer {
     display: flex;
-    gap: 22px;
+    gap: 12px;
     justify-content:center;
     align-items: center;
 }
 
-.social-icon-footer {
-    fill: var(--light-txt-cl);
-}
-.social-link-footer:hover {
+
+.social-link-footer:hover, 
+.social-link-footer:focus {
     background-color: var(--blue-bg-cl);
 }
 
